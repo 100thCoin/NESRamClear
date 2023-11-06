@@ -139,7 +139,7 @@ PrintMSG_PatternLoop: ; Loop over the LUT
 	LDX #0 ; initialize X as 0 for this upcoming loop.
 	
 PrintBytes:		; I also wanted to show what the pattern is, but to be extra cool...
-				; I decided to ac tually print the data from the bytes in RAM instead of hard-code it.
+				; I decided to print the data from the bytes in RAM instead of hard-code it.
 	LDA <$0, X	; load bytes from $0 to $7
 	AND #$F0	; seperate the left nybble
 	LSR A
